@@ -35,5 +35,4 @@ This project includes task management, priority levels, due dates, filtering, se
 
 ---
 
-## 📁 Project Structure
 
