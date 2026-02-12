@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>Smart Productivity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart Student Productivity Tracker</h1>
+
+<div class="container">
+    <span>Total: <b id="total"></b></span>
+    <span>Completed: <b id="completed"></b></span>
+    <span>Pending: <b id="pending"></b></span>
+</div>
+
+<div class="form">
+    <input type="text" id="taskInput" placeholder="Task name">
+    
+    <select id="priority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
+
+    <input type="date" id="dueDate">
+
+    <button onclick="addTask()">Add</button>
+</div>
+
+<div class="filters">
+    <button onclick="loadTasks()">All</button>
+    <button onclick="loadTasks('completed')">Completed</button>
+    <button onclick="loadTasks('pending')">Pending</button>
+</div>
+
+<input type="text" id="searchInput" placeholder="Search task..." onkeyup="searchTask()">
+
+<ul id="taskList"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
